@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/fdansv/tilenames/issues"
   },
-  "homepage": "https://github.com/fdansv/tilenames"
+  "homepage": "https://github.com/fdansv/tilenames",
+  "dependencies": {
+    "express": "^4.13.4",
+    "open": "0.0.5"
+  }
 }
