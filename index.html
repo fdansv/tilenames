@@ -41,6 +41,10 @@
   L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
   }).addTo(map);
+  var names
+  $.getJSON("/names.json", function(data) {
+    names = data
+  })
 
   $('.leaflet-tile').hover(function() {
     var numbers = this.src.match(/\d*\/\d*\/\d*.png/g)[0].replace(".png", "").split("/")
